@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .img-responsive {
+        /* Optional: If you want to stack or change alignment on small screens */
+        flex-direction: column; /* Stack items if needed */
+        text-align: center;     /* Center text and image */
+    }
+    img {
+        max-width: 100%; /* Ensure the image is responsive */
+        height: auto;    /* Maintain aspect ratio */
+    }
+}

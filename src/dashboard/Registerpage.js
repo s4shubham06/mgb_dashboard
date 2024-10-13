@@ -7,9 +7,12 @@ function Registorpage() {
   return (
     <div className='container'>
         <div className='row justify-content-md-center'>
-            <div className='col-md-8 bg-dark shadow p-5 '>
+            <div className='col-md-8 col-sm-8 col-xs-8 bg-dark shadow p-5 '>
                 <p className='h3 text-center text-white'>User Register</p>
                 <hr/>
+                <span className=''>    
+                     <input className='mb-3' type='text' placeholder='Enter Employee id'/>
+                </span>
                 <div class="mb-3">
                     <label  class="form-label text-white">UserName</label>
                     <input type="text" class="form-control" placeholder='username'/>

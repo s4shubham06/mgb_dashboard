@@ -1,33 +1,29 @@
 import React from "react";
 import "../pages/style.css";
-import Myloginpage from "./Myloginpage";
 import { Link } from "react-router-dom";
+import Myloginpage from "./Myloginpage";
 
 const mgblogo = "https://mgbtechnologies.com/assets/img/mgbtechlogo-01-02.png";
 
 function Mynavigationbar() {
   return (
+    <>
+    <div className="container">
+<div class="text-center">
+  <img src={mgblogo} class="rounded" style={{height:"53px",width:"180px"}} alt="..."/>
+</div>
+    </div>
     <div className="container">
       <div className="row">
-        <div className="col-xs-3 col-sm-4 col-md-6 col-lg-12">
-          <nav className="navbar bg-dark">
-            <a class="navbar-brand" href="#">
-              <img className="img-responsive" src={mgblogo} alt="" />
-            </a>
-          </nav>
-        </div>
-        <div className="col-xs-3 col-sm-4 col-md-6 col-lg-12">
-          <div class="d-grid gap-2 col-4 mx-auto">
-            <Link to="timeshow" class="btn btn-primary" type="button">
-              Employee Login
-            </Link>
-          </div>
-        </div>
-        <div className="col-xs-3 col-sm-4 col-md-6 col-lg-12">
-          <Myloginpage/>
+        <div className="col-sm-12 col-xs-12">
+          <Link to="timeshow" className="btn btn-outline-primary d-grid gap-2 col-xs-4 col-sm-4 mx-auto mt-5 overflow-hidden">Employee Link</Link>
         </div>
       </div>
     </div>
+    <div className="container">
+    <Myloginpage/>
+    </div>
+    </>
   );
 }
 
